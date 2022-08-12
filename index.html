@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="display-4 my-5">Nasa APOD</h1>
+
+        <div class="row">
+            <div class="col">
+                <form id="form" class="form p-4 bg-light border border-1 rounded mb-5">
+                    <label for="" class="form-label">Enter a date</label>
+                    <input type="date" id="date" class="form-control mb-3">
+                    <button type="submit" class="btn btn-primary">Get Image</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="mb-3">Resent Searches</h2>
+                <div id="recent" class="list-group">
+                    <!-- template for recent image search -->
+                    <div class="list-group-item d-flex align-items-center p-3 mb-3">
+                        <div class="square" style="background-color: #cc0000"></div>
+                        <div class="me-auto">
+                            <p>
+                                <strong>#cc0000</strong><br>
+                                <em>2022-03-31</em>
+                            </p>
+                        </div>
+                        <button class="btn btn-close"></button>
+                    </div>
+                    <!-- end of template -->
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
