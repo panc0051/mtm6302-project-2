@@ -59,7 +59,11 @@ function buildRecent() {
                 <div class="card-body">
                     <h5 class="card-title">${title}</h5>
                     <p class="card-text">${explanation}</p>
-                    <a href="#" class="btn btn-primary">Save</a>
+                    
+                    <a href="${url}" target="_blank" class="btn btn-primary">HD</a>
+
+
+
                     <a href="#" class="btn btn-close" data-index="${i}"></a>
                 </div>
             </div>
@@ -114,6 +118,7 @@ $recent.addEventListener("click", function (e) {
         buildRecent();
     }
 })
+
 
 //check if local storage has data
 const ls = localStorage.getItem("data");
